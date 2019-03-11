@@ -3,7 +3,7 @@ Dockerfile and scripts for a distcc &amp; cross compilation for ARMv7 container 
 
 Built using the multi-architecture images from [archlinux-docker](https://github.com/lopsided98/archlinux-docker).
 
-## Building and running the image:
+## Building and running the image
 Image for x86_64 is available in [Dockerhub](https://hub.docker.com/r/pxtech/px-toolchain). A new image build is triggered whenever a change in the base image occurs.
 
 To pull and run the image execute the command below:
@@ -20,7 +20,7 @@ docker run  -d                          \
             pxtech/px-toolchain
 ```
 
-### Options:
+### Options
 ```
 -d: Run in detached mode.
 --rm: Remove container on exit.
@@ -55,7 +55,7 @@ DISTCC_HOSTS="YOUR.CLIENT.IP.ADDR/JOBS"     # Enter the IP of the host that is r
 MAKEFLAGS="-j32"                            # Maximum number of jobs to distribute.                                          
 ```
 
-## References:
+## References
 
 [archlinux-docker](https://github.com/lopsided98/archlinux-docker) - Basic Arch Linux Docker images for multiple architectures build with native pacman and Docker multi-stage builds.
 
