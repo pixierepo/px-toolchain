@@ -4,7 +4,7 @@ Dockerfile and scripts for a distcc &amp; cross compilation for ARMv7 container 
 Built using the multi-architecture images from [archlinux-docker](https://github.com/lopsided98/archlinux-docker).
 
 ## Building and running the image:
-Image for x86_64 is available in [Dockerhub](https://hub.docker.com/r/pxtech/px-toolchain).
+Image for x86_64 is available in [Dockerhub](https://hub.docker.com/r/pxtech/px-toolchain). A new image build is triggered whenever a change in the base image occurs.
 
 To pull and run the image execute the command below:
 
