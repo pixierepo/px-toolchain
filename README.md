@@ -1,5 +1,7 @@
 # px-toolchain
-Dockerfile and scripts for a distcc &amp; cross compilation for ARMv7l container based on Arch Linux. Built using the multi-architecture images from [archlinux-docker](https://github.com/lopsided98/archlinux-docker).
+Dockerfile and scripts for a distcc &amp; cross compilation for ARMv7l container based on Arch Linux, originally created as part of [PX:Tech](https://www.pxteck.io) ecosystem. 
+
+Built using the multi-architecture images from [archlinux-docker](https://github.com/lopsided98/archlinux-docker).
 
 ## Building and running the image:
 Image for x86_64 is available in [Dockerhub](https://hub.docker.com/r/pxtech/px-toolchain).
