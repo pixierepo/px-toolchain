@@ -37,7 +37,7 @@ If you prefer to build the image yourself, run:
 ```
 docker build -f Dockerfile.px-toolchain .
 ```
-#References:
+## References:
 
 [archlinux-docker:](https://github.com/lopsided98/archlinux-docker) - Basic Arch Linux Docker images for multiple architectures build with native pacman and Docker multi-stage builds.
 
