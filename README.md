@@ -41,6 +41,8 @@ docker build -f Dockerfile.px-toolchain .
 ```
 ## References:
 
-[archlinux-docker:](https://github.com/lopsided98/archlinux-docker) - Basic Arch Linux Docker images for multiple architectures build with native pacman and Docker multi-stage builds.
+[archlinux-docker](https://github.com/lopsided98/archlinux-docker) - Basic Arch Linux Docker images for multiple architectures build with native pacman and Docker multi-stage builds.
 
 [Archlinux ARM Distcc Cross-Compiling](https://archlinuxarm.org/wiki/Distcc_Cross-Compiling) - Toolchain is used as provided by Arch Linux ARM.
+
+[PX:Tech](https://pxtech.io) - LTE-enabled Hardware, OS & Cloud platform for Industrial IoT applications.
