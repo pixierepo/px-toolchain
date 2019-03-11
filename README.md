@@ -55,6 +55,12 @@ DISTCC_HOSTS="YOUR.CLIENT.IP.ADDR/JOBS"     # Enter the IP of the host that is r
 MAKEFLAGS="-j32"                            # Maximum number of jobs to distribute.                                          
 ```
 
+After this, you can run ```makepkg``` as you normally would.
+To monitor progress and distribution of jobs, run:
+```
+watch -n 1 distccmon-text
+```
+
 ## References
 
 [archlinux-docker](https://github.com/lopsided98/archlinux-docker) - Basic Arch Linux Docker images for multiple architectures build with native pacman and Docker multi-stage builds.
