@@ -28,7 +28,7 @@ docker run  -d                          \
 --name: Name of container.
 
 Environment Variables:
-DISTCCD_JOBS: Number of jobs to run (32 by default)
+DISTCCD_JOBS: Number of jobs to accept and run (32 by default).
 DISTCCD_ALLOW: Listen to any host.
 TZ: Timezone.
 
@@ -39,6 +39,22 @@ If you prefer to build the image yourself, run:
 ```
 docker build -f Dockerfile.px-toolchain .
 ```
+
+## Usage
+
+Just run the container and set the Master system according to the [Distributed Compiling](https://archlinuxarm.org/wiki/Distributed_Compiling) entry on Arch Linux ARM Wiki.
+This is where you'll be running ```makepkg``` from:
+
+1. Install distcc.
+2. Edit ```/etc/makepkg.cong``` file and change the following variables:
+```
+BUILDENV=(distcc color !ccache check !sign) # Enable distcc option
+
+DISTCC_HOSTS="YOUR.CLIENT.IP.ADDR/JOBS"     # Enter the IP of the host that is running the container and the maximun number of                                             # jobs (Note that the default is 4 jobs).
+
+MAKEFLAGS="-j32"                            # Maximum number of jobs to distribute.                                          
+```
+
 ## References:
 
 [archlinux-docker](https://github.com/lopsided98/archlinux-docker) - Basic Arch Linux Docker images for multiple architectures build with native pacman and Docker multi-stage builds.
