@@ -46,11 +46,11 @@ Just run the container and set the Master system according to the [Distributed C
 This is where you'll be running ```makepkg``` from:
 
 1. Install distcc.
-2. Edit ```/etc/makepkg.cong``` file and change the following variables:
+2. Edit ```/etc/makepkg.conf``` file and change the following variables:
 ```
 BUILDENV=(distcc color !ccache check !sign) # Enable distcc option
 
-DISTCC_HOSTS="YOUR.CLIENT.IP.ADDR/JOBS"     # Enter the IP of the host that is running the container and the maximun number of                                             # jobs (Note that the default is 4 jobs).
+DISTCC_HOSTS="YOUR.CLIENT.IP.ADDR/JOBS"     # Enter the IP of the host that is running the container and the maximun number of jobs (Note that the default is 4 jobs).                                         
 
 MAKEFLAGS="-j32"                            # Maximum number of jobs to distribute.                                          
 ```
